@@ -1,0 +1,324 @@
+:root{
+
+    --azul:#2563eb;
+    --morado:#7c3aed;
+    --rosa:#ec4899;
+
+    --blanco:#ffffff;
+    --gris:#f8fafc;
+    --texto:#1e293b;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--azul),
+        var(--morado)
+    );
+
+    min-height:100vh;
+
+    font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+    color:var(--texto);
+
+}
+
+/* HEADER */
+
+.hero{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.titulo-principal{
+
+    font-size:3rem;
+    font-weight:bold;
+
+    text-shadow:
+    0 3px 10px rgba(0,0,0,.3);
+
+}
+
+.subtitulo{
+
+    font-size:1.2rem;
+
+    margin-top:10px;
+    margin-bottom:25px;
+
+    opacity:.95;
+
+}
+
+.btn-sincronizar{
+
+    background:var(--rosa);
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.btn-sincronizar:hover{
+
+    transform:translateY(-3px);
+
+    background:#db2777;
+    color:white;
+
+}
+
+/* PANEL */
+
+.panel-info{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.panel-info h2{
+
+    color:var(--azul);
+    font-weight:bold;
+
+}
+
+/* TARJETAS */
+
+.card-departamento{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.card-departamento:hover{
+
+    transform:
+    translateY(-6px);
+
+}
+
+.numero-depto{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:var(--morado);
+
+}
+
+.nombre-inquilino{
+
+    margin-top:10px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+/* ESTADOS */
+
+.estado{
+
+    margin-top:15px;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    color:white;
+
+}
+
+.estado-verde{
+
+    background:#22c55e;
+
+}
+
+.estado-amarillo{
+
+    background:#f59e0b;
+
+}
+
+.estado-rojo{
+
+    background:#ef4444;
+
+}
+
+/* MODAL */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.modal-header{
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--azul),
+        var(--morado)
+    );
+
+    color:white;
+
+}
+
+.modal-title{
+
+    font-weight:bold;
+
+}
+
+.modal-body{
+
+    padding:30px;
+
+}
+
+/* QR */
+
+.modal-body img{
+
+    max-width:250px;
+
+    border-radius:15px;
+
+}
+
+/* BOTONES */
+
+.btn-pagar{
+
+    background:var(--rosa);
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.btn-pagar:hover{
+
+    background:#db2777;
+
+    color:white;
+
+}
+
+.btn-contacto{
+
+    background:var(--azul);
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.btn-contacto:hover{
+
+    background:#1d4ed8;
+
+    color:white;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    margin-top:50px;
+
+    padding:25px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    backdrop-filter:blur(8px);
+
+    color:white;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .titulo-principal{
+
+        font-size:2rem;
+
+    }
+
+    .panel-info{
+
+        text-align:center;
+
+    }
+
+}
